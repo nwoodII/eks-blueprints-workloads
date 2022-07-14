@@ -9,7 +9,9 @@ metadata:
     #https://github.com/kubernetes-sigs/aws-load-balancer-controller/issues/1571
     #so commenting grouping feature
     #alb.ingress.kubernetes.io/group.name: riker
-    alb.ingress.kubernetes.io/security-groups: sg-0d466fe14f3663271    
+    # EKS created security group applied to ENI that is attached to EKS Control Plane master nodes, as well as any managed workloads.
+    # argocd/blueprints-addon-argocd-server
+    alb.ingress.kubernetes.io/security-groups: sg-0d466fe14f3663271, sg-0d346491d6623a63c 
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     #alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
