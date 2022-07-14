@@ -14,7 +14,3 @@ spec:
       repoURL: git@github.com:aws-containers/ecsdemo-crystal.git
       targetRevision: main
       path: kubernetes/helm/ecsdemo-crystal
-    blueGreen:
-      repoURL: git@github.com:nwoodII/argocd-example-apps.git
-      targetRevision: master
-      path: blue-green     
