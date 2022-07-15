@@ -11,7 +11,7 @@ metadata:
     #alb.ingress.kubernetes.io/group.name: riker
     # EKS created security group applied to ENI that is attached to EKS Control Plane master nodes, as well as any managed workloads.
     # argocd/blueprints-addon-argocd-server
-    alb.ingress.kubernetes.io/security-groups: sg-0d466fe14f3663271, sg-0d346491d6623a63c 
+    alb.ingress.kubernetes.io/security-groups: sg-06dd67e93e873dd97, sg-050e56b958605ab5c
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     #alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
